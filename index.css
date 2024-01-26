@@ -47,22 +47,27 @@ a:visited
 }
 
 
-@media screen and (max-width:740px)
-{
-    #menuList
-    {
-        margin-top: 100px;
-    }  
-}
 @media screen and (max-width:500px) 
 {
-    #menuList
+    #ul
     {
         display: none;
+        background-color: rgb(26, 25, 24);
+        position: absolute;
+        top: 45px;
+        left: 0px;
+        padding: 10px;
+        width: 100%;
+        cursor: pointer;
+        
+    }
+    #menuList
+    {
+
     } 
     .menuBar-line{
         cursor: pointer;
         display: block;
         margin-right: 20px;
-    }   
+    }  
 }

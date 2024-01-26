@@ -12,12 +12,13 @@ body
 }
 #nameId
 {
-    color: White;
-    font-weight: 350;
+    color: rgb(244, 243, 240);
+    font-weight: 500;
 }
 p::first-letter
 {
-    color: rgb(174, 6, 6);
+    color: rgb(238, 25, 25);
+    font-size: 55px;
 }
 #menuList
 {
@@ -43,10 +44,32 @@ a:visited
 }
 .menuBar-line{
     cursor: pointer;
-    display: none;
+}
+#ul
+{
+    display:block;
+}
+#profession
+{
+    height: 50vh;
 }
 
+#personal
+{
+    font-weight: lighter;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+#nameAuthor
+{
+    color:rgb(238, 25, 25);
+}
+#fromTo
+{
+    text-align: center;
 
+}
 @media screen and (max-width:500px) 
 {
     #ul
@@ -54,16 +77,15 @@ a:visited
         display: none;
         background-color: rgb(26, 25, 24);
         position: absolute;
-        top: 45px;
+        top: 65px;
         left: 0px;
         padding: 10px;
         width: 100%;
         cursor: pointer;
-        
     }
     #menuList
     {
-
+        
     } 
     .menuBar-line{
         cursor: pointer;

@@ -84,6 +84,33 @@ a:visited
     color: aliceblue;
     text-align: justify;
 }
+#info
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.734);
+    border-radius: 10px;
+}
+#extra
+{
+    margin-top: 40px;
+    width: 130px;
+    border-radius: 10px;
+    display: none;
+    position: relative;
+}
+#web,#analyst
+{
+    text-align: justify;
+    margin-top: 20px;
+}
+#extra
+{
+    box-shadow: 7px 4px 2px rgb(131, 21, 24);
+}
 @media screen and (max-width:765px) 
 {
     #personal,#fromTo
@@ -91,7 +118,28 @@ a:visited
         font-size: 20px;
         line-height: 80px;
     }
-   
+    #info
+    {
+        width: 100%;
+        background:none;
+        background-image: url("https://www.michaelpage.ae/sites/michaelpage.ae/files/legacy/soft_skills_1348992461_600x314.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x:center;
+        /* background-position-y:bottom ; */
+        height: 80vh;
+
+    }
+    #extra
+    {
+        position: absolute;
+        margin-top: 20px;
+        background-color: rgb(212, 183, 163);
+    }
+   button
+   {
+        
+   }
 }
 @media screen and (max-width:500px) 
 {
@@ -115,4 +163,8 @@ a:visited
         display: block;
         margin-right: 20px;
     }  
+    #info
+    {
+        height: 53vh;
+    }
 }

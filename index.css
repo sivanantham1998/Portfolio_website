@@ -15,7 +15,7 @@ body
     color: rgb(244, 243, 240);
     font-weight: 500;
 }
-p::first-letter
+#name::first-letter
 {
     color: rgb(238, 25, 25);
     font-size: 55px;
@@ -58,17 +58,39 @@ a:visited
 {
     font-weight: lighter;
     font-size: 25px;
-    text-align: center;
+    /* text-align: center; */
     color: white;
 }
 #nameAuthor
 {
     color:rgb(238, 25, 25);
 }
-#fromTo
+#personal,#fromTo
 {
-    text-align: center;
-
+    line-height: 100px;
+}
+#profession
+{
+    background-image: url("./photo/WhatsApp_Image_2024-01-27_at_9.58.36_AM-removebg-preview.png");
+    background-position-y:50%;
+    background-position-x: 75%;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    backface-visibility: visible;
+    height: 50vh;
+}
+#aboutMe
+{
+    color: aliceblue;
+}
+@media screen and (max-width:765px) 
+{
+    #personal,#fromTo
+    {
+        font-size: 20px;
+        line-height: 80px;
+    }
+   
 }
 @media screen and (max-width:500px) 
 {

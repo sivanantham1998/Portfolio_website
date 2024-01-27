@@ -2,6 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .top
 {
@@ -15,9 +16,9 @@ body
     color: rgb(244, 243, 240);
     font-weight: 500;
 }
-#name::first-letter
+#nameId::first-letter
 {
-    color: rgb(238, 25, 25);
+    color: rgba(198, 25, 25, 0.009);
     font-size: 55px;
 }
 #menuList
@@ -39,7 +40,7 @@ a:visited
 {
     height: 4px;
     width: 25px;
-    background-color: #e62962;
+    background-color: #fbf8f9;
     margin-bottom: 4px;
 }
 .menuBar-line{
@@ -63,7 +64,7 @@ a:visited
 }
 #nameAuthor
 {
-    color:rgb(238, 25, 25);
+    color:rgb(18, 17, 17);
 }
 #personal,#fromTo
 {
@@ -122,7 +123,7 @@ a:visited
     {
         width: 100%;
         background:none;
-        background-image: url("https://www.michaelpage.ae/sites/michaelpage.ae/files/legacy/soft_skills_1348992461_600x314.jpg");
+        background-image: url();
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x:center;

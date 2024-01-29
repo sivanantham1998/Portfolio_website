@@ -104,15 +104,6 @@ a:visited
     flex-wrap: wrap;
     justify-content: space-around;
 }
-#extra
-{
-    margin-top: 0px;
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    /* position: relative; */
-    /* left: 130px; */
-}
 #experience
 {
     margin-top: 20px;
@@ -136,6 +127,8 @@ a:visited
     text-align: left;
     /* margin-top:20px ; */
     color: rgb(3, 44, 246);
+    background-color: rgb(212, 183, 163);
+    border-radius: 10px;
 
 }
 #web,#analyst
@@ -146,7 +139,26 @@ a:visited
 }
 #extra
 {
+    margin-top: 0px;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    background-color:  rgb(212, 183, 163);
+    box-shadow: 7px 4px 2px rgb(158, 32, 36);
+}
+#education
+{
+    width: 100%;
+    margin-top: 20px;
+}
+#edu
+{
+    background-color:   rgb(212, 183, 163);
     box-shadow: 7px 4px 2px rgb(131, 21, 24);
+    border-radius: 10px;
+}
+table{
+    border-radius: 10px;
 }
 @media screen and (max-width:765px) 
 {
@@ -164,7 +176,7 @@ a:visited
         background-size: cover;
         background-position-x:center;
         /* background-position-y:bottom ; */
-        height: 80vh;
+        /* height: 80vh; */
 
     }
     #extra
@@ -198,6 +210,9 @@ a:visited
     #info
     {
         /* height: 53vh; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     
 }

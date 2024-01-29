@@ -20,7 +20,6 @@ document.getElementById('sk').addEventListener('click',function()
 {
    console.log('work')
    let skills=document.getElementById('extra')
-
    if(skills.style.display=="block")
    {
       skills.style.display='none'
@@ -30,3 +29,21 @@ document.getElementById('sk').addEventListener('click',function()
       skills.style.display="block"
    }
 })
+
+// experience
+
+document.getElementById('expense').addEventListener('click',function()
+{
+   let a=document.getElementById('exp')
+
+   if(a.style.display=="block")
+   {
+      a.style.display="none"
+   }
+   else
+   {
+      a.style.display="block"
+   }
+})
+
+

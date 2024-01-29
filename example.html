@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show/Hide Divs</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="showDiv('skills')">Show Skills</button>
+  <button onclick="showDiv('experience')">Show Experience</button>
+  <button onclick="showDiv('edu')">Show Education</button>
+
+  <div id="skills" class="hidden">Skills content goes here.</div>
+  <div id="experience" class="hidden">Experience content goes here.</div>
+  <div id="edu" class="hidden">Education content goes here.</div>
+
+  <script>
+    function showDiv(divId) {
+      // Hide all divs
+      hideAllDivs();
+
+      // Show the selected div
+      document.getElementById(divId).style.display = 'block';
+    }
+
+    function hideAllDivs() {
+      // Hide all divs
+      var divs = document.querySelectorAll('div');
+      divs.forEach(function(div) {
+        div.style.display = 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>

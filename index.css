@@ -180,7 +180,7 @@ a:visited
 
     #ul
     {
-        display: none;
+        /* display: none; */
         background-color: rgb(26, 25, 24);
         position: absolute;
         top: 65px;

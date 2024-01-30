@@ -4,13 +4,13 @@ menuBar.addEventListener('click',function()
 {
    let ul=document.getElementById('ul')
 
-   if(ul.style.display=="block")
+   if(ul.style.display=="none")
    {
-      ul.style.display="none";
+      ul.style.display="block";
    }
    else
    {
-      ul.style.display="block"
+      ul.style.display="none"
    }
 })
 

@@ -122,9 +122,9 @@ a:visited
     overflow-y: auto;
     transition-duration:5s;
     transition-property: all;
-    width: 300px;
-    transition-timing-function: ease-in-out;
-    transform: scale(0.4);
+    /* width: 300px; */
+    transition-timing-function: ease-in;
+    transform:scale(0.8);
 }
 @media screen and (max-width:765px) 
 {
@@ -178,7 +178,7 @@ a:visited
     }
     #ul li
     {
-        padding: 20px;
+        padding: 28px;
     }
 
     .menuBar-line{

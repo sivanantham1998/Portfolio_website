@@ -12,6 +12,7 @@ body
     border-radius: 10px;
     align-items: center;
     position: sticky;
+    z-index: -2;
     top: 0px;
 }
 #nameId
@@ -75,18 +76,27 @@ a:visited
 }
 #profession
 {
+    background: linear-gradient(125deg,rgba(251, 249, 249, 0.3),rgba(247, 244, 244, 0.3));
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background-image: url("./photo/WhatsApp_Image_2024-01-27_at_9.58.36_AM-removebg-preview.png");
     background-position-y:50%;
     background-position-x: 75%;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
     backface-visibility: visible;
-    height: 50vh;
+    height: 55vh;
+    margin-bottom: -20px;
 }
 #aboutMe
 {
     color: aliceblue;
     text-align: justify;
+    background: linear-gradient(125deg,rgba(251, 249, 249, 0.3),rgba(247, 244, 244, 0.3));
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 #skills,#exp,#edu
 {
@@ -150,7 +160,7 @@ a:visited
     #ul
     {
         /* display: none; */
-        background-color: rgb(26, 25, 24);
+        background-color: rgb(5, 5, 5);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         position: absolute;
@@ -171,6 +181,13 @@ a:visited
         margin-right: 20px;
     }  
    
+}
+/* 427px */
+@media screen and (max-width:427px) {
+    #ul li
+    {
+        padding: 19px;
+    }
 }
 
 /* 420px */

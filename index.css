@@ -43,7 +43,7 @@ a:visited
 }
 .menuBar
 {
-    display: none;
+    display: block;
 }
 .menuBar-line
 {
@@ -113,7 +113,7 @@ a:visited
     margin-left: 20px;
     /* margin-bottom: 10px; */
 }
-#exp,#edu
+#exp,#edu,#skills
 {
     overflow-y: hidden;
 }

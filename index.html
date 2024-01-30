@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
 </head>
-<body style="background: linear-gradient(135deg,rgb(197, 87, 87),rgba(103, 12, 12, 0.5),rgb(197, 87, 87));backdrop-filter: blur(10px);">
+<body style="background-color: rgb(55, 54, 54);backdrop-filter: blur(20px);-webkit-backdrop-filter: blur(20px);">
     <div class="container">
         <div class="top">
             <div class="name" >
@@ -57,81 +57,57 @@
         <br/>
         <div class="about" id="idAbout">
             <div class="row">
-                <div class="">
-                    <div id="aboutMe">
+                <div id="aboutMe">
                         <h1>About Me</h1>
                         <p>Hello, I'm Sivanantham, a skilled MERN Stack Developer and Data Analytics professional with a Master's in Computer Applications (MCA) earned in 2020. I possess a robust technical skill set that includes expertise in HTML, CSS, JavaScript, React, Node.js, MongoDB, Python, SQL, MS Excel, Power BI, and Tableau. As a MERN Stack Developer, I excel in creating dynamic and responsive web applications, leveraging my proficiency in front-end and back-end technologies. Additionally, my proficiency in data analytics allows me to derive meaningful insights and visualization using tools such as Power BI and Tableau. My passion for continuous learning ensures that I stay updated with the latest industry trends and technologies. With a keen eye for detail and a commitment to delivering high-quality solutions, I am dedicated to contributing my skills and knowledge to drive innovation in the ever-evolving field of technology.</p>
-                    </div>
                 </div>
-                <div class="" id="info">
-                    <div id="skills">
-                        <p class="btn border border-danger border-4 mt-1" id="sk">
-                           <span class="fw-bold">Skills</span> 
-                        </p>
-                        <div id="extra">
-                            <p id="web">
-                                <span style="color: rgb(168, 27, 27);font-weight: 900;">
-                                    Web Development
-                                </span> <br/>
-                                Building Web App for Mobile and Desktop
-                            </p>
-                            <p id="analyst">
-                                <span style="color: rgb(168, 27, 27);font-weight: 900;">
-                                    Data Analyst
-                                </span><br>
-                                Data analysts excel in deciphering intricate datasets, revealing valuable insights for informed decisions.
-                            </p>
-                        </div>
-                    </div>
-                    <div id="experience">
-                        <p class="btn border border-danger border-4 mt-1" id="expense">
-                            <span class="fw-bold">
-                                Experience
-                            </span>
-                        </p>
-                        <div id="exp">
-                            <div>
-                                <p id="mern">
-                                    <br>
-                                    <span style="color:  rgb(168, 27, 27);font-weight: 900;">
-                                        Mern Stack Tutor <br>
-                                        <span style="color: white;font-weight: 400;">
-                                            As a seasoned MERN stack tutor with one and a half years of hands-on experience, I have successfully trained and mentored over 30 individuals, equipping them with valuable skills and expertise in web development using MongoDB, Express.js, React.js, and Node.js.
-                                        </span>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="education">
-                        <p class="btn border border-danger border-4 mt-1" id="education">
-                            <span class="fw-bold">
-                                Education
-                            </span>
-                        </p>
-                        <div id="edu">
-                            <table class="table table-bordered text-center  fw-bolder text-white table-hover table-striped">
-                                <tr>
-                                    <th>Degree</th>
-                                    <th>College</th>
-                                    <th>CGPA</th>
-                                </tr>
-                                <tr>
-                                    <td>UG</td>
-                                    <td>Erode Arts College,Erode,Tamilnadu,India</td>
-                                    <td>78%</td>
-                                </tr>
-                                <tr>
-                                    <td>PG</td>
-                                    <td>Erode Arts College,Erode,Tamilnadu,India</td>
-                                    <td>75%</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <!-- skills , exp , edu -->
 
-                <!-- next card category -->
+            <div class="row">
+                <div class="col-sm-4" id="margin">
+                    <div id="skills">
+                        <h1>Skills</h1>
+                        <p>
+                            <span style="color: brown;font-weight: 700;">Web development</span> <br>
+                            Building Web application for Mobile and Desktop
+                        </p>
+                        <p>
+                            <span style="color: brown;font-weight: 700;">Data analyst</span> <br>
+                            Data analysts excel in deciphering intricate datasets, revealing valuable insights for informed decisions.
+                            <br> <span>&nbsp;</span>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="col-sm-4" id="margin">
+                    <div id="exp">
+                        <h1>Experience</h1>
+                        <p>
+                            <span style="color: brown;font-weight: 700;">Mern stack Tutor</span> <br>
+                            As a seasoned MERN stack tutor with one and a half years of hands-on experience, I have successfully trained and mentored over 30 individuals, equipping them with valuable skills and expertise in web development using MongoDB, Express.js, React.js, and Node.js.
+                        </p>
+                        <p>
+                            <span style="color: brown;font-weight: 700;">Data Analyst Tutor</span> <br>
+                            Led a year-long comprehensive data analytics tutoring program, mentoring and advancing the skills of over 10 students in Python, MySQL, Excel, and Power BI, fostering their proficiency in data analysis techniques and tools.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4" id="margin">
+                    <div id="edu">
+                        <h1>Education</h1>
+                            <dl>
+                                <dt style="color: brown;font-weight: 700;">Under Graducation</dt>
+                                <dd>B.Sc(Computer Science)</dd>
+                                <dd>Erode Arts&Science College, <br>Erode ,<br>Tamilnadu</dd>
+                                <dd>With 65%</dd>
+                                <dt style="color: brown;font-weight: 700;">Post Graducation</dt>
+                                <dd>MCA</dd>
+                                <dd>Erode Arts&Science College, <br>Erode ,<br>Tamilnadu</dd>
+                                <dd>With 60%</dd>
+                            </dl>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

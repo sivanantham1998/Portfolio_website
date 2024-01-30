@@ -8,7 +8,7 @@ body
 {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(26, 25, 24);
+    background-color: rgb(5, 5, 5);
     border-radius: 10px;
     align-items: center;
     position: sticky;
@@ -39,25 +39,24 @@ a:visited
     color: rgb(252, 250, 250);
     text-decoration: none;
 }
+.menuBar
+{
+    display: none;
+}
 .menuBar-line
 {
     height: 4px;
     width: 25px;
     background-color: #fbf8f9;
     margin-bottom: 4px;
-}
-.menuBar-line{
     cursor: pointer;
+
 }
+    
 #ul
 {
     display:block;
 }
-#profession
-{
-    height: 50vh;
-}
-
 #personal
 {
     font-weight: lighter;
@@ -67,11 +66,12 @@ a:visited
 }
 #nameAuthor
 {
-    color:rgb(18, 17, 17);
+    color:rgb(243, 242, 242);
 }
 #personal,#fromTo
 {
     line-height: 100px;
+    color: white;
 }
 #profession
 {
@@ -88,81 +88,28 @@ a:visited
     color: aliceblue;
     text-align: justify;
 }
-#info
+#skills,#exp,#edu
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* align-items:baseline; */
-    /* justify-content:center; */
-    /* background-color: rgba(255, 255, 255, 0.734); */
-    border-radius: 10px;
-    
-}
-#skills
-{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#experience
-{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-#exp
-{
-    /* margin-top: 20px; */
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    /* position: absolute; */
-    /* background:linear-gradient(to left,rgb(190, 70, 70),rgb(247, 118, 230)) ; */
-    box-shadow: -7px 4px 2px  rgb(168, 27, 27);
-
-}
-#mern
-{
-    text-align: left;
-    /* margin-top:20px ; */
-    color: rgb(3, 44, 246);
-    background-color: rgb(212, 183, 163);
-    border-radius: 10px;
-
-}
-#web,#analyst
-{
-    text-align:left;
-    margin-top: 20px;
+    background: linear-gradient(125deg,rgba(251, 249, 249, 0.3),rgba(247, 244, 244, 0.3));
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: white;
+    height: 300px;
 }
-#extra
+#skills p,#exp p,#edu dl
 {
-    margin-top: 0px;
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    background-color:  rgb(212, 183, 163);
-    box-shadow: 7px 4px 2px rgb(158, 32, 36);
+    margin-left: 20px;
+    /* margin-bottom: 10px; */
 }
-#education
+#exp,#edu
 {
-    width: 100%;
-    margin-top: 20px;
+    overflow-y: hidden;
 }
-#edu
+#exp:hover,#edu:hover
 {
-    background-color:   rgb(212, 183, 163);
-    box-shadow: 7px 4px 2px rgb(131, 21, 24);
-    border-radius: 10px;
+    overflow-y: auto;
 }
-table{
-    border-radius: 10px;
-}
-
 @media screen and (max-width:765px) 
 {
     #personal,#fromTo
@@ -170,29 +117,32 @@ table{
         font-size: 20px;
         line-height: 80px;
     }
-    #info
-    {
-        width: 100%;
-        background:none;
-        background-image: url();
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x:center;
-        /* background-position-y:bottom ; */
-        /* height: 80vh; */
-
-    }
-    #extra
-    {
-        /* position: absolute; */
-        margin-top: 20px;
-        background-color: rgb(212, 183, 163);
-    }
     #ul
     {
         padding-left: 10px;
     }
+    .menuBar
+    {
+        display: block;
+    }
+    
   
+}
+
+/* 575 px */
+@media screen and (max-width:575px) {
+    #skills
+    {
+        height: 200px;
+    }
+    #exp,#edu
+    {
+        margin-top: 20px;
+    }
+    #margin h1
+    {
+        text-align: center;
+    }
 }
 @media screen and (max-width:500px) 
 {
@@ -203,13 +153,16 @@ table{
         background-color: rgb(26, 25, 24);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-
         position: absolute;
         top: 53px;
         left: 0px;
-        padding: 10px;
+        padding: 8px;
         width: 100%;
         cursor: pointer;
+    }
+    #ul li
+    {
+        padding: 20px;
     }
 
     .menuBar-line{
@@ -217,12 +170,13 @@ table{
         display: block;
         margin-right: 20px;
     }  
-    #info
+   
+}
+
+/* 420px */
+@media screen and (max-width:420px) {
+    #skills
     {
-        /* height: 53vh; */
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        height: 250px;
     }
-    
 }

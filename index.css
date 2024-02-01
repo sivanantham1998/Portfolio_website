@@ -301,10 +301,14 @@ a:hover
 
     #weather
     {
-        height: 650px;
+        height: 750px;
     }
     #blogcard
     {
         height: 620px;
+    }
+    #receipe
+    {
+        height: 700px;
     }
 }

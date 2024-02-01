@@ -41,6 +41,10 @@ a:visited
     color: rgb(252, 250, 250);
     text-decoration: none;
 }
+a:hover
+{
+    text-decoration: underline;
+}
 .menuBar
 {
     display: block;
@@ -116,16 +120,59 @@ a:visited
 #exp,#edu,#skills
 {
     overflow-y: hidden;
+    transition-duration:2s;
+    transition-property: all;
+    /* width: 300px; */
+    transition-timing-function: ease-in;
 }
 #exp:hover,#edu:hover,#skills:hover
 {
     overflow-y: auto;
-    transition-duration:5s;
-    transition-property: all;
-    /* width: 300px; */
-    transition-timing-function: ease-in;
-    transform:scale(0.8);
+    transform:scale(1.1);
 }
+
+/* my works */
+#weather,#blogcard
+{
+    background: linear-gradient(125deg,rgba(145, 226, 181, 0.3),rgba(119, 190, 129, 0.3));
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    height: 365px;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+    transition-property: inherit;
+}
+#weather:hover,#blogcard:hover
+{
+    transform: scale(1.023);
+}
+#weather h1,#blogcard h1
+{
+    text-align: center;
+}
+#weather p,#blogcard p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#weather a:hover
+{
+    /* font-weight: 900; */
+    color: white;
+}
+#blogcard a:hover{
+    color: whitesmoke;
+}
+/* 990px */
+@media screen and (max-width:990px) {
+    #weather,#blogcard
+    {
+        height: 560px;
+    }
+}
+/* 756px */
 @media screen and (max-width:765px) 
 {
     #personal,#fromTo
@@ -141,7 +188,14 @@ a:visited
     {
         display: block;
     }
-    
+    #weather,#blogcard
+    {
+        height: 380px;
+    }
+    #blogcard
+    {
+        margin-top: 30px;
+    }
   
 }
 
@@ -160,6 +214,8 @@ a:visited
         text-align: center;
     }
 }
+
+/* 500px */
 @media screen and (max-width:500px) 
 {
 
@@ -186,7 +242,19 @@ a:visited
         display: block;
         margin-right: 20px;
     }  
+
+    #weather
+    {
+        height: 450px;
+    }
    
+}
+/* 450px */
+@media screen and (max-width:450px) {
+    #blogcard
+    {
+        height: 420px;
+    }
 }
 /* 427px */
 @media screen and (max-width:427px) {
@@ -201,5 +269,10 @@ a:visited
     #skills
     {
         height: 250px;
+    }
+
+    #weather,#blogcard
+    {
+        height: 500px;
     }
 }

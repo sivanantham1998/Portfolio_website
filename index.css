@@ -102,6 +102,11 @@ a:hover
     border-radius: 20px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 270px;
 }
 #skills,#exp,#edu
 {
@@ -110,7 +115,11 @@ a:hover
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: white;
-    height: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 #skills p,#exp p,#edu dl
 {
@@ -128,7 +137,7 @@ a:hover
 #exp:hover,#edu:hover,#skills:hover
 {
     overflow-y: auto;
-    transform:scale(1.1);
+    transform:scale(1.2);
 }
 
 /* my works */
@@ -182,6 +191,10 @@ a:hover
 }
 /* 990px */
 @media screen and (max-width:990px) {
+    #aboutMe
+    {
+        height:350px ;
+    }
     #weather,#blogcard,#receipe
     {
         height: 650px;
@@ -191,6 +204,12 @@ a:hover
 /* 756px */
 @media screen and (max-width:765px) 
 {
+    #aboutMe
+    {
+        height: 500px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     #personal,#fromTo
     {
         font-size: 20px;
@@ -228,6 +247,7 @@ a:hover
     #exp,#edu
     {
         margin-top: 20px;
+        height: 250px;
     }
     #margin h1
     {
@@ -301,7 +321,7 @@ a:hover
 
     #weather
     {
-        height: 850px;
+        height: 750px;
     }
     #blogcard
     {

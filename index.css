@@ -177,10 +177,82 @@ a:hover
 }
 #logo
 {
-    border-radius: 500px;
+    border-radius: 600px;
     height: 100px;
     width: 100px;
 }
+#cover{
+    background: linear-gradient(125deg,rgba(194, 229, 77, 0.3),rgba(203, 222, 26, 0.3));
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    height: 430px;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+    transition-property: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cover h1
+{
+    margin-top: 10px;
+}
+#sendMessage
+{
+    background: linear-gradient(125deg,rgba(194, 229, 77, 0.3),rgba(203, 222, 26, 0.3));
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    height: 430px;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+    transition-property: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+
+#sendMessage form
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+input
+{
+    background:transparent;
+    outline: none;
+    border: 2.5px solid gray;
+    border-radius: 10px;
+    height: 40px;
+    padding: 20px;
+    color: white;
+}
+input:placeholder
+{
+    color: white;
+}
+textarea
+{
+    background:transparent;
+    outline: none;
+    border: 2.5px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    height: 140px;
+    color: white;
+}
+form button
+{
+    width: 80px;
+}
+
 /* 1115px */
 @media screen and (max-width:1115px) {
     #weather,#blogcard,#receipe
@@ -236,6 +308,13 @@ a:hover
         height: 600px;
     }
   
+}
+/* 710px */
+@media screen and (max-width:710px) {
+    #sendMessage
+    {
+        margin-top:25px;
+    }
 }
 
 /* 575 px */

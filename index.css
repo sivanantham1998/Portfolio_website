@@ -119,7 +119,7 @@ a:hover
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
 }
 #skills p,#exp p,#edu dl
 {
@@ -239,7 +239,11 @@ a:hover
 }
 
 /* 575 px */
-@media screen and (max-width:575px) {
+@media screen and (max-width:575.98px) {
+    #menuList
+    {
+        padding: 0px;
+    }
     #skills
     {
         height: 200px;
@@ -252,6 +256,10 @@ a:hover
     #margin h1
     {
         text-align: center;
+    }
+    #weather
+    {
+        height: 650px;
     }
 }
 

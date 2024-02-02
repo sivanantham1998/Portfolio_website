@@ -102,10 +102,10 @@ a:hover
     border-radius: 20px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-   display: flex;
+   /* display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
+   align-items: center; */
    height: 270px;
 }
 #skills,#exp,#edu
@@ -129,7 +129,7 @@ a:hover
 #exp,#edu,#skills
 {
     overflow-y: hidden;
-    transition-duration:2s;
+    transition-duration:1s;
     transition-property: all;
     /* width: 300px; */
     transition-timing-function: ease-in;
@@ -137,7 +137,7 @@ a:hover
 #exp:hover,#edu:hover,#skills:hover
 {
     overflow-y: auto;
-    transform:scale(1.2);
+    transform:scale(1.023);
 }
 
 /* my works */
@@ -303,6 +303,18 @@ a:hover
         height: 420px;
     }
 }
+
+/* 440px  */
+@media screen and (max-width:440px) {
+    #aboutMe
+    {
+        height: 550px;
+    }
+    #blogcard
+    {
+        height: 550px;
+    }
+}
 /* 427px */
 @media screen and (max-width:427px) {
     #ul li
@@ -314,6 +326,10 @@ a:hover
 
 /* 420px */
 @media screen and (max-width:420px) {
+    #aboutMe
+    {
+        height: 580px;
+    }
     #skills
     {
         height: 250px;
@@ -330,5 +346,76 @@ a:hover
     #receipe
     {
         height: 700px;
+    }
+}
+
+/* 395px */
+
+@media screen and (max-width:395px) {
+    #aboutMe
+    {
+        height: 620px;
+    }
+}
+/* 370px */
+
+@media screen and (max-width:370px) {
+    #aboutMe
+    {
+        height: 650px;
+    }
+}
+
+/* 365px */
+
+@media screen and (max-width:366px)
+{
+    #aboutMe
+    {
+        height: 750px;
+    }
+    #ul li
+    {
+        padding: 10px;
+    }
+}
+
+/* 330px */
+@media screen and (max-width:330px) {
+    #ul li
+    {
+        padding: 5px;
+    }
+}
+
+/* 320px */
+@media screen and (max-width:320px) {
+    #aboutMe
+    {
+        height: 800px;
+    }
+}
+/* 310px */
+@media screen and (max-width:310px) {
+    #ul li
+    {
+        padding: 2px;
+    }
+    #aboutMe
+    {
+        height: 850px;
+    }
+    #weather,#receipe,#blogcard
+    {
+        height: 800px;
+    }
+}
+
+/* 270px */
+
+@media screen and(max-width:270px) {
+    #ul li
+    {
+        padding: 0.5px;
     }
 }

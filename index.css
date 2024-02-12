@@ -142,6 +142,10 @@ a:hover
     overflow-y: auto;
     transform:scale(1.023);
 }
+input::placeholder,textarea::placeholder
+{
+    color: white;
+}
 
 /* my works */
 
